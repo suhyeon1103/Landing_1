@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷플릭스 구독 랜딩 페이지</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6, p, span {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .sub-title {
+            font-size: 16px;
+            color: #999;
+            font-weight: 400;
+        }
+
+        .table-section-container {
+            display: flex;
+        }
+
+        .table-section-col {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .table-section-box {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box-typography {
+            color: white;
+        }
+
+        .w-300 {
+            width: 300px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .gap-50 {
+            gap: 50px;
+        }
+
+        .h-80 {
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+        <hi class="title">Choose a plan that's right for you.</hi>
+        <h2 class="sub-title">Downgrade or upgrade at any time</h2>
+
+        <div class="table-section-container">
+            <div class="flex gap-50">
+                <div class="table-section-col w-300">
+                    <div class="h-80"></div>
+                    <span>Montly price after free month ends on 19/9/23</span>
+                    <span>HD available</span>
+                    <span>Ultra HD available</span>
+                    <span>Screens you can watch on at the same time</span>
+                    <span>Watch on your laptop, TV, phon and tablet</span>
+                    <span>Unlimited movies and TV shows</span>
+                    <span>Cancel anytime</span>
+                    <span>First month free</span>
+                </div>
+                
+                <div class="table-section-col">
+                    <div class="box">
+                        <span class="box-typography">Basic</span>
+                    </div>
+                    <span>$7.99</span>
+                    <span>x</span>
+                    <span>x</span>
+                    <span>1</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+                <div class="table-section-col">
+                    <div class="box">
+                        <span class="box-typography">Standard</span>
+                    </div>
+                    <span>$10.99</span>
+                    <span>✓</span>
+                    <span>x</span>
+                    <span>2</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+                <div class="table-section-col">
+                    <div class="box">
+                        <span class="box-typography">Premium</span>
+                    </div>
+                    <span>$13.99</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>4</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                    <span>✓</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
