@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0eed602640.js" crossorigin="anonymous"></script>
+
     <title>NEWNEEK landing page</title>
 </head>
 
@@ -19,21 +22,22 @@
     .container {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 200vh;
     }
 
     .main-content-section-1 {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 300px;
-        background-color: #ff7e00;
+        height: 600px;
+        background-color: rgb(255 107 0);
         justify-content: center;
         align-items: center;
     }
 
     .main-content-section-2 {
         display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 300px;
         background-color: wheat;
@@ -43,10 +47,36 @@
 
     .main-content-section-3 {
         display: flex;
+        flex-direction: column;
+        width: 100vw;
         height: 300px;
         background-color: white;
-        padding-left: 16px;
-        padding-right: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .CTA {
+        background-color: #1a1a1a;
+        margin-top: 35px;
+        padding: 20px 35px;
+        border-radius: 8px;
+        border: 1px solid #1a1a1a;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .text-card-container {
+        margin-top: 20px;
+    }
+
+    .text-card {
+        display: flex;
+        margin: 10px;
+        padding: 10px 30px;
+        background-color: whitesmoke;
+        border-radius: 30px;
     }
 
     .card-container {
@@ -62,9 +92,9 @@
         width: 190px;
         height: 130px;
         border-radius: 8px;
-        background-color: #999;
+        background-color: #efefef;
         gap: 8px;
-        overflow: ;
+        overflow: hidden;
     }
 
     .card h2 {
@@ -79,6 +109,14 @@
         border: 1px solid #1a1a1a;
     }
 
+    .main-content-section-4 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .third-header {
         display: flex;
         justify-content: space-between;
@@ -87,6 +125,8 @@
     .big-card {
         display: flex;
         flex: 1;
+        flex-direction: column;
+        gap: 12px;
     }
 
     .big-card img {
@@ -103,6 +143,7 @@
     .profile-container {
         display: flex;
         flex: 1;
+        gap: 4px;
     }
 
     .profile-image {
@@ -113,14 +154,18 @@
     }
 
     .icons-container {
-
+        display: flex;
     }
 
     .icon-mockup {
         width: 16px;
         height: 16px;
         border-radius: 999px;
-        background-color: orange;
+        background-color: white;
+    }
+
+    .flex {
+        display: flex;
     }
 
     .space-betweeen {
@@ -138,29 +183,35 @@
 
     .pagination-container {
         display: flex;
-        gap: 16px;
-        font-size: 18px;
+        gap: 20px;
+        font-size: 19px;
         justify-content: center;
-        background-color: #e4e5e5;
+        background-color: white;
         font-weight: 600;
     }
 
     .pagination-prev {
-
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        color: #999;
+        border-radius: 999px;
+        font-weight: 700;
     }
 
     .pagination-next {
         width: 16px;
         height: 16px;
-        background-color: orange;
+        background-color: white;
+        color: #999;
         border-radius: 999px;
+        font-weight: 700;
     }
 
-
-    .main-content-section-4 {
+    .main-content-section-5 {
         display: flex;
         flex-direction: column;
-        background-color: wheat;
+        background-color: #e4e5e5;
         min-height: 300px;
         justify-content: center;
         align-items: center;
@@ -168,16 +219,23 @@
         padding-top: 40px;
     }
 
-    .main-content-section-4 .card {
+    .main-content-section-5 h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .main-content-section-5 .card {
         display: flex;
         flex-direction: column;
         background-color: white;
         border-radius: 4px;
     }
 
-    .main-content-section-4 .card .numbering {
-        background-color: rgb(228,229,229);
-        border-radius: 5px 12px;
+    .main-content-section-5 .card .numbering {
+        text-align: center;
+        background-color: #e4e5e5;
+        border-radius: 999px;
+        padding: 5px 12px;
     }
 
 </style>
@@ -185,10 +243,24 @@
 <body>
     <main class="container">
         <div class="main-content-section-1">
-            <img src="https://placehold.co/600x300" width="191" height="141"/>
-            <img src="https://placehold.co/600x300" width="191" height="50"/>
+            <img src="https://cdn.litt.ly/images/tcSoSbQMWqLRYvw9bEXNYa90go80Qpcr?s=600x100&m=outside&f=webp" width="400" height="300"/>
+            <img src="https://newneek.co/_next/image?url=%2Fimages%2Fnewnewcup%2Fnewnewcup_title.png&w=3840&q=75" width="191" height="90"/>
+
+            <p>2024.8.5(월)~2024.9.29(일), 8주</p>
+
+            <button type="button" class="CTA" onclick="location.href='https://newneek.co/sign-in?rd_url=/articles/edit'">JOIN</button>
         </div>
+        
         <div class="main-content-section-2">
+            <h2>지식? 새롭게 쓸 사람 구함!</h2>
+            <div class="text-card-container">
+                <span class="text-card">💡내가 가진 지식, 영감, 인사이트를 나누고 싶은 사람</span>
+                <span class="text-card">🗣️다른 사람과 이야기를하며 관점을 넓히고 싶은 사람</span>
+                <span class="text-card">🗒️나만의 콘텐츠를 만들어보고 싶었던 사람</span>
+            </div>
+        </div>
+        
+        <div class="main-content-section-3">
             <h2>지금 이 시대를 사는</h2>
             <h2>나의 지식을 나눠주세요</h2>
 
@@ -199,27 +271,21 @@
                     <h2>지식? 새롭게 쓰자!</h2>
                     <h2>뉴뉴컵</h2>
                 </div>
-            </div>
 
-            <div class="card-container">
                 <div class="card">
                     <div class="card-tag">전체</div>
 
                     <h2>지식? 새롭게 쓰자!</h2>
                     <h2>뉴뉴컵</h2>
                 </div>
-            </div>
 
-            <div class="card-container">
                 <div class="card">
                     <div class="card-tag">전체</div>
 
                     <h2>지식? 새롭게 쓰자!</h2>
                     <h2>뉴뉴컵</h2>
                 </div>
-            </div>
 
-            <div class="card-container">
                 <div class="card">
                     <div class="card-tag">전체</div>
 
@@ -228,22 +294,69 @@
                 </div>
             </div>
         </div>
-        <div class="main-content-section-3">
+
+        <div class="main-content-section-4">
             <div class="third-header">
                 <div>전체</div>
-                <div>
+                <div style="display: flex; gap: 12px;"
                     <span>최신순</span><span>주간 인기순</span><span>인기순</span>
                 </div>
             </div>
             <div class="big-card">
-                <img src="https://placehold.co/600x300" alt="imgplaceholder">
-                <span><span style="color: orange">0명이 응원했어요.</span></span>
+                <img src="https://placehold.co/600x400" alt="imgplaceholder">
+                <span><span style="color: orange">0</span>명이 응원했어요.</span>
+                <p>[독서모임] 방향성이 있는 질문 만드는 법</p>
+
+                <div class="flex space-betweeen gap-12">
+                    <div class="profile-container">
+                        <div class="profile-image"></div>
+                        <p>북렌즈</p>
+                    </div>
+                    
+                    <div class="icons-container"></div>
+                    
+                    <div class="button-icon">
+                        <div class="icon-mockup"></div>
+                        <div><i class="fa-regular fa-heart"></i></div>
+                    </div>
+
+                    <div class="button-icon">
+                        <div class="icon-mockup"></div>
+                        <div><i class="fa-regular fa-comment-dots"></i></div>
+                    </div>
+
+                    <div class="button-icon">
+                        <div class="icon-mockup"></div>
+                        <div><i class="fa-regular fa-bookmark"></i></div>
+                    </div>
+                </div>
             </div>
 
             <div class="pagination-container">
-                <div class="pagination-prev">
-                </div>
-                <div class="pagination-next">
+                <div class="pagination-prev">〈</div>
+                <div style="color: orange;">1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div class="pagination-next">〉</div>
+            </div>
+        </div>
+
+        <div class="main-content-section-5">
+            <div>
+                <h1>이렇게 참여해 보세요.</h1>
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="numbering">1</div>
+                        <p>뉴닉 웹사이트에서<br>아티클을<br>작성해주세요.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="numbering">2</div>
+                        <p>작성한 아티클을<br>주제별로 모아<br>시리즈를 만들면 끝!</p>
+                    </div>
                 </div>
             </div>
         </div>
