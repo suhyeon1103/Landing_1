@@ -21,6 +21,7 @@
 
         .main-content-section-1 {
             display: flex;
+            flex-direction: column;
             width: 100vw;
             height: 300px;
             background-color: orange;
@@ -38,18 +39,17 @@
             align-items: center;
         }
 
-        .main-content-section- {
+        .main-content-section-3 {
             display: flex;
-            width: 100vw;
             height: 300px;
             background-color: white;
-            justify-content: center;
-            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
         .card-container {
             display: flex;
-            flex-direction: column;
+            gap: 12px;
         }
 
         .card {
@@ -71,18 +71,75 @@
         }
 
         .card-tag {
-            border-radius: 000px;
+            border-radius: 999px;
             background-color: white;
             padding: 6px 8px;
             border: 1px solid #1a1a1a;
         }
 
+        .third-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .big-card {
+            display: flex;
+            flex: 1;
+        }
+
+        .big-card img {
+            width: 100%;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .big-card span {
+            color: #999;
+            font-weight: 600;
+        }
+
+        .profile-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .profile-image {
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            background-color: orange;
+        }
+
+        .icons-container {
+
+        }
+
+        .icon-mockup {
+            width: 16px;
+            height: 16px;
+            border-radius: 999px;
+            background-color: orange;
+        }
+
+        .space-betweeen {
+            justify-content: space-between;
+        }
+
+        .button-icon {
+            display: flex;
+            gap: 4px;
+        }
+
+        .gap-12 {
+            gap: 12px;
+        }
+
     </style>
 </head>
 <body>
-    <main class="container">
+    <main class="card-container">
         <div class="main-content-section-1">
-            <img src="https://placehold.co/300x300" width="191">
+            <img src="https://placehold.co/600x300" width="191">
         </div>
         <div class="main-content-section-2">
             <h2>지금 이 시대를 사는</h2>
@@ -122,6 +179,18 @@
                     <h2>지식? 새롭게 쓰자!</h2>
                     <h2>뉴뉴컵</h2>
                 </div>
+            </div>
+        </div>
+        <div class="main-content-section-3">
+            <div class="third-header">
+                <div>전체</div>
+                <div>
+                    <span>최신순</span><span>주간 인기순</span><span>인기순</span>
+                </div>
+            </div>
+            <div class="big-card">
+                <img src="https://placehold.co/600x300" alt="imgplaceholder">
+                <span><span style="color: orange">0명이 응원했어요.</span></span>
             </div>
         </div>
     </main>    
